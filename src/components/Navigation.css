@@ -13,9 +13,6 @@
     padding-bottom: env(safe-area-inset-bottom, 8px);
 }
 
-#root>.bottom-nav {
-    position: absolute;
-}
 
 .nav-item {
     display: flex;

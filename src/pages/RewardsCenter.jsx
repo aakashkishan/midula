@@ -3,6 +3,7 @@ import { useCouponRewards } from '../hooks/useCouponRewards';
 import { getCouponsForMilestone, milestoneValues } from '../data/coupons';
 import { ArrowLeft, Gift, Check } from 'lucide-react';
 import CouponCard from '../components/CouponCard';
+import './auth/auth.css';
 
 const MILESTONES = [3, 7, 14, 30];
 

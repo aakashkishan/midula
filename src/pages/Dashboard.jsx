@@ -34,7 +34,7 @@ export default function Dashboard() {
             {/* Greeting */}
             <div className="fade-up fade-up-1" style={{ marginBottom: '1.5rem' }}>
                 <p style={{ fontSize: '0.8rem', color: 'var(--fg4)', marginBottom: '2px' }}>Good evening</p>
-                <h1 style={{ fontSize: '1.6rem' }}>Hello, Jane 👋</h1>
+                <h1 style={{ fontSize: '1.6rem' }}>Oi, Jaanu! 👋</h1>
             </div>
 
             {/* Pill Tabs */}

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import '../App.css';
+import './RecipeDetail.css';
 
 function NutritionCard({ label, value, unit, color, icon, delay }) {
     const [visible, setVisible] = useState(false);
