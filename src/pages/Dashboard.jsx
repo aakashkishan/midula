@@ -1,14 +1,27 @@
 import { useState } from 'react';
-import { Droplet, Clock, Utensils, Moon, Plus, Minus } from 'lucide-react';
+import { Droplet, Clock, Utensils, Moon, Plus, Minus, Settings } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import useWorkoutStreak from '../hooks/useWorkoutStreak';
+import StreakDisplay from '../components/StreakDisplay';
+import NotificationSettings from '../components/NotificationSettings';
+import RewardsCenter from './RewardsCenter';
 import '../App.css';
 
-export default function Dashboard() {
+export default function Dashboard({ notificationProps }) {
     const [water, setWater] = useState(5);
     const [workout, setWorkout] = useState(12);
     const [food, setFood] = useState(1800);
     const [sleep, setSleep] = useState(9);
     const maxWater = 8;
+
+    const [showSettings, setShowSettings] = useState(false);
+    const [showRewardsPage, setShowRewardsPage] = useState(false);
+    
+    const { streakInfo, resetStreak } = useWorkoutStreak();
+
+    if (showRewardsPage) {
+        return <RewardsCenter currentStreak={streakInfo.currentStreak} onBack={() => setShowRewardsPage(false)} />;
+    }
 
     const addWater = () => {
         if (water < maxWater) {
@@ -32,9 +45,14 @@ export default function Dashboard() {
         <div className="page-container">
 
             {/* Greeting */}
-            <div className="fade-up fade-up-1" style={{ marginBottom: '1.5rem' }}>
-                <p style={{ fontSize: '0.8rem', color: 'var(--fg4)', marginBottom: '2px' }}>Good evening</p>
-                <h1 style={{ fontSize: '1.6rem' }}>Oi, Jaanu! 👋</h1>
+            <div className="fade-up fade-up-1" style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                <div>
+                    <p style={{ fontSize: '0.8rem', color: 'var(--fg4)', marginBottom: '2px' }}>Good evening</p>
+                    <h1 style={{ fontSize: '1.6rem' }}>Oi, Jaanu! 👋</h1>
+                </div>
+                <button onClick={() => setShowSettings(true)} style={{ color: 'var(--fg4)', padding: '6px' }}>
+                    <Settings size={22} />
+                </button>
             </div>
 
             {/* Pill Tabs */}
@@ -42,6 +60,15 @@ export default function Dashboard() {
                 <div className="pill-tab active">Today</div>
                 <div className="pill-tab">This Week</div>
                 <div className="pill-tab">This Month</div>
+            </div>
+
+            {/* Streak Display */}
+            <div className="fade-up fade-up-3" style={{ marginBottom: '1.5rem' }}>
+                <StreakDisplay 
+                    streakInfo={streakInfo} 
+                    onReset={resetStreak} 
+                    onOpenRewards={() => setShowRewardsPage(true)} 
+                />
             </div>
 
             {/* Water Ring + Workout Card */}
@@ -111,6 +138,22 @@ export default function Dashboard() {
                     </div>
                 ))}
             </div>
+
+            {notificationProps && (
+                <NotificationSettings
+                    isOpen={showSettings}
+                    onClose={() => setShowSettings(false)}
+                    config={notificationProps.config}
+                    permission={notificationProps.permission}
+                    history={notificationProps.history}
+                    onToggle={notificationProps.toggleNotification}
+                    onSetTime={notificationProps.setTime}
+                    onSetFrequency={notificationProps.setFrequency}
+                    onRequestPermission={notificationProps.requestPermission}
+                    onClearHistory={notificationProps.clearHistory}
+                    onReset={notificationProps.resetConfig}
+                />
+            )}
         </div>
     );
 }

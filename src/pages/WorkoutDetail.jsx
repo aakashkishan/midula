@@ -3,6 +3,7 @@ import { ArrowLeft, Play, Pause, SkipForward, Square, ChevronUp, ChevronDown, Za
 import { routineExercises } from '../data/exercises';
 import ExerciseAnimation from '../components/ExerciseAnimation';
 import MeditationBreath from '../components/MeditationBreath';
+import useWorkoutStreak from '../hooks/useWorkoutStreak';
 import confetti from 'canvas-confetti';
 import './WorkoutDetail.css';
 
@@ -22,6 +23,7 @@ export default function WorkoutDetail({ routineId, onBack }) {
     const routineSpeed = routine.speed ?? 'normal';
     const categoryStyle = CATEGORY_COLORS[routine.category] ?? CATEGORY_COLORS.CORE;
 
+    const { recordWorkout } = useWorkoutStreak();
     const [currentIdx, setCurrentIdx] = useState(0);
     const [timeLeft, setTimeLeft] = useState(exercises[0].duration);
     const [isRunning, setIsRunning] = useState(false);
@@ -40,8 +42,9 @@ export default function WorkoutDetail({ routineId, onBack }) {
     const handleComplete = useCallback(() => {
         setIsRunning(false);
         setCompleted(true);
+        recordWorkout();
         confetti({ particleCount: 150, spread: 100, origin: { y: 0.4 }, colors: ['#8ec07c', '#fabd2f', '#d3869b', '#fe8019', '#83a598'] });
-    }, []);
+    }, [recordWorkout]);
 
     const moveToNext = useCallback(() => {
         if (isRest) {

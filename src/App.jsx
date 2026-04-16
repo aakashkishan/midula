@@ -2,6 +2,8 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { useAuth } from './context/AuthContext';
 import { setNavigate } from './pages/useNavigate';
+import useNotifications from './hooks/useNotifications';
+import ToastNotification from './components/ToastNotification';
 
 import Navigation from './components/Navigation';
 import Dashboard from './pages/Dashboard';
@@ -19,6 +21,7 @@ function App() {
     const [activeTab, setActiveTab] = useState('dashboard');
     const [currentPath, setCurrentPath] = useState('/');
     const { user, loading, isDemo, isOnboarded } = useAuth();
+    const notificationProps = useNotifications();
 
     useEffect(() => {
         setNavigate((path) => {
@@ -59,7 +62,7 @@ function App() {
 
     const renderContent = () => {
         switch (activeTab) {
-            case 'dashboard': return <Dashboard key="dashboard" />;
+            case 'dashboard': return <Dashboard key="dashboard" notificationProps={notificationProps} />;
             case 'workouts': return <Workouts key="workouts" />;
             case 'goals': return <Goals key="goals" />;
             case 'recipes': return <Recipes key="recipes" />;
@@ -70,6 +73,7 @@ function App() {
 
     return (
         <>
+            <ToastNotification toasts={notificationProps.toasts} onDismiss={notificationProps.dismissToast} />
             <main style={{ paddingBottom: '72px', width: '100%' }}>
                 {renderContent()}
             </main>
