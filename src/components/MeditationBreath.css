@@ -1,0 +1,135 @@
+/* ===== MeditationBreath — full component ===== */
+.meditation-wrap {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+/* ===== Ambient mandala ===== */
+.meditation-mandala {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: mandalaSpin 20s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes mandalaSpin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.meditation-petal {
+    position: absolute;
+    width: 44px;
+    height: 80px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    top: 50%;
+    left: 50%;
+    transform-origin: center 100px;
+    opacity: 0.35;
+    transition: background 1.5s ease;
+    /* Each petal is positioned by its own inline rotate() */
+    margin-left: -22px;
+    margin-top: -80px;
+}
+
+/* ===== Ring SVG ===== */
+.meditation-ring-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ===== Breathing orb ===== */
+.meditation-orb {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+    z-index: 3;
+    will-change: transform, box-shadow, background;
+}
+
+/* ===== Inner resonance ring ===== */
+.meditation-inner-ring {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+    z-index: 4;
+    pointer-events: none;
+    will-change: transform, border-color;
+}
+
+/* ===== Phase label ===== */
+.meditation-phase-label {
+    position: relative;
+    z-index: 5;
+    margin-top: 155px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-shadow: 0 0 18px currentColor;
+    animation: phaseIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+    text-align: center;
+}
+
+@keyframes phaseIn {
+    from { opacity: 0; transform: translateY(6px) scale(0.95); }
+    to   { opacity: 1; transform: translateY(0)   scale(1);    }
+}
+
+/* ===== Phase indicator dots ===== */
+.meditation-phase-dots {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.meditation-phase-dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.15);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.meditation-phase-dot.done {
+    background: rgba(142, 192, 124, 0.45);
+}
+
+/* ===== Hint text ===== */
+.meditation-hint {
+    position: relative;
+    z-index: 5;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    color: rgba(255,255,255,0.2);
+    text-transform: uppercase;
+    margin-top: 5px;
+}

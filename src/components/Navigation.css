@@ -1,0 +1,55 @@
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    background: var(--bg0);
+    border-top: 1px solid var(--bg1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 50;
+    padding-bottom: env(safe-area-inset-bottom, 8px);
+}
+
+#root>.bottom-nav {
+    position: absolute;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: var(--fg4);
+    transition: color 0.25s ease;
+    width: 60px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-item svg {
+    width: 22px;
+    height: 22px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-item span {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.nav-item.active {
+    color: var(--aqua);
+}
+
+.nav-item.active svg {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 2px 4px rgba(142, 192, 124, 0.4));
+}
+
+.nav-item:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}

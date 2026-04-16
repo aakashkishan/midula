@@ -1,0 +1,210 @@
+/* ===== Exercise Animation Container ===== */
+.exercise-animation-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Glow Halo by Speed / Type ===== */
+.exercise-glow {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    top: 20px;
+    animation: glowPulse 2.5s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.exercise-glow.speed-fast {
+    background: radial-gradient(circle, rgba(254, 128, 25, 0.14), transparent 70%);
+    animation-duration: 1.2s;
+}
+
+.exercise-glow.speed-normal {
+    background: radial-gradient(circle, rgba(142, 192, 124, 0.12), transparent 70%);
+    animation-duration: 2.5s;
+}
+
+.exercise-glow.speed-slow {
+    background: radial-gradient(circle, rgba(211, 134, 155, 0.12), transparent 70%);
+    animation-duration: 4s;
+}
+
+.exercise-glow.rest-glow {
+    background: radial-gradient(circle, rgba(250, 189, 47, 0.12), transparent 70%);
+    animation-duration: 3s;
+}
+
+@keyframes glowPulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.25); opacity: 1; }
+}
+
+/* ===== Image Wrapper ===== */
+.exercise-img-wrap {
+    width: 260px;
+    height: 245px;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: rgba(40, 40, 40, 0.5);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ===== Flipbook Frame Transitions ===== */
+.exercise-img.frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: opacity 0.28s ease-in-out, transform 0.28s ease-in-out;
+}
+
+.exercise-img.frame-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.exercise-img.frame-hidden {
+    opacity: 0;
+    transform: scale(0.98);
+}
+
+/* ===== Frame Indicator Dots ===== */
+.frame-dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 5;
+}
+
+.frame-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.frame-dot.active {
+    background: rgba(255,255,255,0.85);
+    transform: scale(1.3);
+}
+
+/* ===== Static Hold Breathing ===== */
+.exercise-img.exercise-breathe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    animation: exerciseBreathe 3.5s ease-in-out infinite;
+}
+
+@keyframes exerciseBreathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+}
+
+/* ===== Muscle Badge ===== */
+.exercise-muscle-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: rgba(142, 192, 124, 0.1);
+    border: 1px solid rgba(142, 192, 124, 0.2);
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--aqua);
+    letter-spacing: 0.04em;
+    z-index: 2;
+    position: relative;
+}
+
+.muscle-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--aqua);
+    animation: musclePulse 1.8s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes musclePulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+/* ===== Rest Screen ===== */
+.rest-breathe-wrap {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.rest-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(250, 189, 47, 0.25);
+    animation: restExpand 3s ease-in-out infinite;
+}
+
+.rest-ring-1 {
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.rest-ring-2 {
+    width: 120px;
+    height: 120px;
+    animation-delay: 0.5s;
+    border-color: rgba(250, 189, 47, 0.15);
+}
+
+.rest-ring-3 {
+    width: 160px;
+    height: 160px;
+    animation-delay: 1s;
+    border-color: rgba(250, 189, 47, 0.08);
+}
+
+@keyframes restExpand {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.15); opacity: 0.3; }
+}
+
+.rest-icon-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    z-index: 3;
+}
+
+.rest-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--yellow);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
