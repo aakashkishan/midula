@@ -1,0 +1,35 @@
+[     342ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:14337
+[   65103ms] [LOG] BJS - [00:54:29]: Babylon.js v9.2.0 - WebGL2 - Parallel shader compilation @ http://localhost:5173/node_modules/.vite/deps/logger-DkPtg8o-.js?v=c46dbebc:39
+[   65150ms] [LOG] BJS - [00:54:29]: Babylon.js v9.2.0 - WebGL2 - Parallel shader compilation @ http://localhost:5173/node_modules/.vite/deps/logger-DkPtg8o-.js?v=c46dbebc:39
+[   65173ms] TypeError: this._scene.getUniqueId is not a function
+    at new Node (http://localhost:5173/node_modules/.vite/deps/node-CMqgP6QW.js?v=c46dbebc:252:31)
+    at new TransformNode (http://localhost:5173/node_modules/.vite/deps/engine.multiRender-B1vcc9Yt.js?v=c46dbebc:76:3)
+    at buildMale (http://localhost:5173/src/components/3d/HumanModel.jsx:134:20)
+    at HumanModel (http://localhost:5173/src/components/3d/HumanModel.jsx:623:9)
+    at http://localhost:5173/src/components/3d/Exercise3D.jsx?t=1775807585351:159:29
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:12904:13)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:851:66)
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6617:153)
+    at commitHookPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6652:55)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7618:22)
+[   65173ms] [WARNING] %s
+
+%s
+ An error occurred in the <Exercise3D> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:5257
+[   65174ms] TypeError: this._scene.getUniqueId is not a function
+    at new Node (http://localhost:5173/node_modules/.vite/deps/node-CMqgP6QW.js?v=c46dbebc:252:31)
+    at new TransformNode (http://localhost:5173/node_modules/.vite/deps/engine.multiRender-B1vcc9Yt.js?v=c46dbebc:76:3)
+    at buildMale (http://localhost:5173/src/components/3d/HumanModel.jsx:134:20)
+    at HumanModel (http://localhost:5173/src/components/3d/HumanModel.jsx:623:9)
+    at http://localhost:5173/src/components/3d/Exercise3D.jsx?t=1775807585351:159:29
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:12904:13)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:851:66)
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6617:153)
+    at commitHookPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6652:55)
+    at reconnectPassiveEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7701:6)
+[   65173ms] [WARNING] %s
+
+%s
+ An error occurred in the <Exercise3D> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:5257

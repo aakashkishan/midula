@@ -1,0 +1,35 @@
+[     140ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:14337
+[  101728ms] [LOG] BJS - [00:51:04]: Babylon.js v9.2.0 - WebGL2 - Parallel shader compilation @ http://localhost:5173/node_modules/.vite/deps/logger-DkPtg8o-.js?v=c46dbebc:39
+[  101758ms] [LOG] BJS - [00:51:04]: Babylon.js v9.2.0 - WebGL2 - Parallel shader compilation @ http://localhost:5173/node_modules/.vite/deps/logger-DkPtg8o-.js?v=c46dbebc:39
+[  101771ms] ReferenceError: require is not defined
+    at buildPottedPlant (http://localhost:5173/src/components/3d/YogaStudio.jsx:146:16)
+    at YogaStudio (http://localhost:5173/src/components/3d/YogaStudio.jsx:364:2)
+    at http://localhost:5173/src/components/3d/Exercise3D.jsx:157:3
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:12904:13)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:851:66)
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6617:153)
+    at commitHookPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6652:55)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7618:22)
+    at recursivelyTraversePassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7606:5)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7672:14)
+[  101771ms] [WARNING] %s
+
+%s
+ An error occurred in the <Exercise3D> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:5257
+[  101771ms] ReferenceError: require is not defined
+    at buildPottedPlant (http://localhost:5173/src/components/3d/YogaStudio.jsx:146:16)
+    at YogaStudio (http://localhost:5173/src/components/3d/YogaStudio.jsx:364:2)
+    at http://localhost:5173/src/components/3d/Exercise3D.jsx:157:3
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:12904:13)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:851:66)
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6617:153)
+    at commitHookPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:6652:55)
+    at reconnectPassiveEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7701:6)
+    at recursivelyTraverseReconnectPassiveEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7688:5)
+    at reconnectPassiveEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:7713:14)
+[  101771ms] [WARNING] %s
+
+%s
+ An error occurred in the <Exercise3D> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:5257

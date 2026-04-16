@@ -1,0 +1,98 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - paragraph [ref=e6]: Good evening
+        - heading "Hello, Jane 👋" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: Today
+        - generic [ref=e10]: This Week
+        - generic [ref=e11]: This Month
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - img [ref=e15]
+            - generic [ref=e18]:
+              - generic [ref=e19]:
+                - text: "5"
+                - generic [ref=e20]: /8
+              - generic [ref=e21]: Glasses
+          - paragraph [ref=e22]: Tap to add water
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e26]: 🧘
+            - generic [ref=e27]:
+              - generic [ref=e28]: Cardio
+              - generic [ref=e29]: 15 min
+          - generic [ref=e30]:
+            - generic [ref=e32]: 💪
+            - generic [ref=e33]:
+              - generic [ref=e34]: Core Flow
+              - generic [ref=e35]: 20 min
+          - generic [ref=e36]:
+            - generic [ref=e38]: 🏃‍♀️
+            - generic [ref=e39]:
+              - generic [ref=e40]: HIIT
+              - generic [ref=e41]: 10 min
+      - generic [ref=e43]: Daily Info
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - img [ref=e47]
+          - generic [ref=e50]:
+            - generic [ref=e51]: Workout
+            - generic [ref=e52]: Daily session
+          - generic [ref=e53]: 12 min
+          - generic [ref=e54]:
+            - button [ref=e55] [cursor=pointer]:
+              - img [ref=e56]
+            - button [ref=e57] [cursor=pointer]:
+              - img [ref=e58]
+        - generic [ref=e59]:
+          - img [ref=e61]
+          - generic [ref=e63]:
+            - generic [ref=e64]: Water
+            - generic [ref=e65]: Stay hydrated
+          - generic [ref=e66]: 5 L
+          - generic [ref=e67]:
+            - button [ref=e68] [cursor=pointer]:
+              - img [ref=e69]
+            - button [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+        - generic [ref=e72]:
+          - img [ref=e74]
+          - generic [ref=e77]:
+            - generic [ref=e78]: Food
+            - generic [ref=e79]: Nutrition intake
+          - generic [ref=e80]: 1800 kcal
+          - generic [ref=e81]:
+            - button [ref=e82] [cursor=pointer]:
+              - img [ref=e83]
+            - button [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+        - generic [ref=e86]:
+          - img [ref=e88]
+          - generic [ref=e90]:
+            - generic [ref=e91]: Sleep
+            - generic [ref=e92]: Last night
+          - generic [ref=e93]: 9 hr
+          - generic [ref=e94]:
+            - button [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+            - button [ref=e97] [cursor=pointer]:
+              - img [ref=e98]
+  - navigation [ref=e99]:
+    - button "Tracker" [ref=e100] [cursor=pointer]:
+      - img [ref=e101]
+      - generic [ref=e103]: Tracker
+    - button "Workouts" [ref=e104] [cursor=pointer]:
+      - img [ref=e105]
+      - generic [ref=e111]: Workouts
+    - button "Goals" [ref=e112] [cursor=pointer]:
+      - img [ref=e113]
+      - generic [ref=e117]: Goals
+    - button "Recipes" [ref=e118] [cursor=pointer]:
+      - img [ref=e119]
+      - generic [ref=e122]: Recipes
+    - button "Coach" [ref=e123] [cursor=pointer]:
+      - img [ref=e124]
+      - generic [ref=e126]: Coach

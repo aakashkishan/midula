@@ -1,0 +1,8 @@
+[     203ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2365f558:14090
+[  101614ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[  102072ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[  103295ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[  103724ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1694
+[  501078ms] [ERROR] THREE.WebGLRenderer: A WebGL context could not be created. Reason:  Canvas has an existing context of a different type @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1748
+[  689519ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5173/@vite/client:968
+[  691834ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2365f558:14090

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { background: #1a1a2e; color: #eee; font-family: system-ui; padding: 2rem; }
+h1 { margin-bottom: 1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.card { background: #16213e; border-radius: 12px; overflow: hidden; }
+.card img { width: 100%; display: block; }
+.card .label { padding: 0.5rem 0.75rem; font-size: 0.85rem; color: #aaa; }
+</style>
+</head>
+<body>
+<h1>Workout Video - Frame Analysis</h1>
+<p>720x1280, 30fps, ~12.4s duration</p>
+<div class="grid">
+<div class="card"><img src="frame-0s.png"><div class="label">0s</div></div>
+<div class="card"><img src="frame-1s.png"><div class="label">1s</div></div>
+<div class="card"><img src="frame-2s.png"><div class="label">2s</div></div>
+<div class="card"><img src="frame-3s.png"><div class="label">3s</div></div>
+<div class="card"><img src="frame-4s.png"><div class="label">4s</div></div>
+<div class="card"><img src="frame-5s.png"><div class="label">5s</div></div>
+</div>
+</body>
+</html>

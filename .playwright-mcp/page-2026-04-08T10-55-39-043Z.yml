@@ -1,0 +1,38 @@
+- generic [ref=e46]:
+  - button "Back to sign in" [ref=e47] [cursor=pointer]:
+    - img [ref=e48]
+  - generic [ref=e50]:
+    - heading "Create account 🚀" [level=1] [ref=e51]
+    - paragraph [ref=e52]: Start your health journey today
+  - generic [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e55]: Email
+      - generic [ref=e56]:
+        - img
+        - textbox "you@example.com" [ref=e57]
+    - generic [ref=e58]:
+      - generic [ref=e59]: Password
+      - generic [ref=e60]:
+        - img
+        - textbox "••••••••" [ref=e61]
+        - button "Toggle password visibility" [ref=e62] [cursor=pointer]:
+          - img [ref=e63]
+    - generic [ref=e66]:
+      - generic [ref=e67]: Confirm Password
+      - generic [ref=e68]:
+        - img
+        - textbox "••••••••" [ref=e69]
+    - generic [ref=e70] [cursor=pointer]:
+      - checkbox "I agree to the Terms of Service" [ref=e71]
+      - generic [ref=e72]:
+        - text: I agree to the
+        - button "Terms of Service" [ref=e73]
+    - generic [ref=e74] [cursor=pointer]:
+      - checkbox "I agree to the Privacy Policy" [ref=e75]
+      - generic [ref=e76]:
+        - text: I agree to the
+        - button "Privacy Policy" [ref=e77]
+    - button "Create Account" [disabled] [ref=e78]
+  - paragraph [ref=e79]:
+    - text: Already have an account?
+    - button "Sign In" [ref=e80] [cursor=pointer]

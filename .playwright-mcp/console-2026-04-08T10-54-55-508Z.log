@@ -1,0 +1,14 @@
+[      99ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2365f558:14090
+[  461569ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2365f558:14090
+[ 1348788ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 1349549ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 1954197ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1694
+[ 2426487ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2426533ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2430663ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2431675ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2432677ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2433686ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2434697ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2435043ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[ 2439730ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1694

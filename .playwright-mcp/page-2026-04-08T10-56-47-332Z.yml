@@ -1,0 +1,37 @@
+- generic [ref=e124]:
+  - button "Back to app" [ref=e125] [cursor=pointer]:
+    - img [ref=e126]
+  - generic [ref=e128]:
+    - heading "Welcome back 👋" [level=1] [ref=e129]
+    - paragraph [ref=e130]: Sign in to continue your fitness journey
+  - generic [ref=e131]:
+    - generic [ref=e132]:
+      - generic [ref=e133]: Email
+      - generic [ref=e134]:
+        - img
+        - textbox "you@example.com" [ref=e135]
+    - generic [ref=e136]:
+      - generic [ref=e137]: Password
+      - generic [ref=e138]:
+        - img
+        - textbox "••••••••" [ref=e139]
+        - button "Toggle password visibility" [ref=e140] [cursor=pointer]:
+          - img [ref=e141]
+    - generic [ref=e144]:
+      - generic [ref=e145] [cursor=pointer]:
+        - checkbox "Remember me" [ref=e146]
+        - generic [ref=e147]: Remember me
+      - button "Forgot password?" [ref=e148] [cursor=pointer]
+    - button "Sign In" [ref=e149] [cursor=pointer]
+  - generic [ref=e151]: or continue with
+  - generic [ref=e152]:
+    - button "Google" [ref=e153] [cursor=pointer]:
+      - img [ref=e154]
+      - text: Google
+    - button "Apple" [ref=e159] [cursor=pointer]:
+      - img [ref=e160]
+      - text: Apple
+  - paragraph [ref=e162]:
+    - text: Don't have an account?
+    - button "Sign Up" [ref=e163] [cursor=pointer]
+  - button "Skip for now (Demo Mode)" [ref=e164] [cursor=pointer]

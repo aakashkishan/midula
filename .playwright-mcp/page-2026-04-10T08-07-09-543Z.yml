@@ -1,0 +1,51 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e265]:
+      - generic [ref=e266]:
+        - button [ref=e267] [cursor=pointer]:
+          - img [ref=e268]
+        - generic [ref=e270]:
+          - heading "Beginner Core Flow" [level=2] [ref=e271]
+          - paragraph [ref=e272]: Exercise 1 of 5
+      - generic [ref=e279]:
+        - generic [ref=e280]: REST
+        - heading "Take a Breath" [level=1] [ref=e320]
+        - paragraph [ref=e282]: "Next: Plank Hold"
+      - generic [ref=e283]:
+        - generic [ref=e286]: Warm-up Walk
+        - generic [ref=e287]:
+          - button "Male model" [ref=e288] [cursor=pointer]:
+            - img [ref=e289]
+            - text: M
+          - button "Female model" [active] [ref=e292] [cursor=pointer]:
+            - img [ref=e293]
+            - text: F
+      - generic [ref=e297]:
+        - img [ref=e298]
+        - generic [ref=e302]: 0:19
+      - generic [ref=e303]:
+        - button [ref=e304] [cursor=pointer]:
+          - img [ref=e305]
+        - button [ref=e307] [cursor=pointer]:
+          - img [ref=e317]
+        - button [ref=e310] [cursor=pointer]:
+          - img [ref=e311]
+      - generic [ref=e313] [cursor=pointer]:
+        - generic [ref=e314]: All Exercises
+        - img [ref=e315]
+  - navigation [ref=e168]:
+    - button "Tracker" [ref=e169] [cursor=pointer]:
+      - img [ref=e170]
+      - generic [ref=e172]: Tracker
+    - button "Workouts" [ref=e173] [cursor=pointer]:
+      - img [ref=e174]
+      - generic [ref=e180]: Workouts
+    - button "Goals" [ref=e181] [cursor=pointer]:
+      - img [ref=e182]
+      - generic [ref=e186]: Goals
+    - button "Recipes" [ref=e187] [cursor=pointer]:
+      - img [ref=e188]
+      - generic [ref=e191]: Recipes
+    - button "Coach" [ref=e192] [cursor=pointer]:
+      - img [ref=e193]
+      - generic [ref=e195]: Coach

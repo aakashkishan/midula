@@ -1,0 +1,51 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e195]:
+      - generic [ref=e196]:
+        - button [ref=e197] [cursor=pointer]:
+          - img [ref=e198]
+        - generic [ref=e200]:
+          - heading "HIIT Cardio Blast" [level=2] [ref=e201]
+          - paragraph [ref=e202]: Exercise 1 of 5
+      - generic [ref=e209]:
+        - generic [ref=e210]: ACTIVE
+        - heading "Jumping Jacks" [level=1] [ref=e211]
+        - paragraph [ref=e212]: 💡 Full range of motion, arms overhead
+      - generic [ref=e213]:
+        - generic [ref=e216]: Jumping Jacks
+        - generic [ref=e217]:
+          - button "Male model" [ref=e218] [cursor=pointer]:
+            - img [ref=e219]
+            - text: M
+          - button "Female model" [ref=e222] [cursor=pointer]:
+            - img [ref=e223]
+            - text: F
+      - generic [ref=e227]:
+        - img [ref=e228]
+        - generic [ref=e232]: 0:40
+      - generic [ref=e233]:
+        - button [ref=e234] [cursor=pointer]:
+          - img [ref=e235]
+        - button [ref=e237] [cursor=pointer]:
+          - img [ref=e238]
+        - button [ref=e240] [cursor=pointer]:
+          - img [ref=e241]
+      - generic [ref=e243] [cursor=pointer]:
+        - generic [ref=e244]: All Exercises
+        - img [ref=e245]
+  - navigation [ref=e167]:
+    - button "Tracker" [ref=e168] [cursor=pointer]:
+      - img [ref=e169]
+      - generic [ref=e171]: Tracker
+    - button "Workouts" [active] [ref=e172] [cursor=pointer]:
+      - img [ref=e173]
+      - generic [ref=e179]: Workouts
+    - button "Goals" [ref=e180] [cursor=pointer]:
+      - img [ref=e181]
+      - generic [ref=e185]: Goals
+    - button "Recipes" [ref=e186] [cursor=pointer]:
+      - img [ref=e187]
+      - generic [ref=e190]: Recipes
+    - button "Coach" [ref=e191] [cursor=pointer]:
+      - img [ref=e192]
+      - generic [ref=e194]: Coach

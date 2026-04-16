@@ -1,0 +1,139 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - paragraph [ref=e8]: Good evening
+          - heading "Hello, Jane 👋" [level=1] [ref=e9]
+        - button "Notification settings" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+      - generic [ref=e14]:
+        - generic [ref=e15]: Today
+        - generic [ref=e16]: This Week
+        - generic [ref=e17]: This Month
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - img [ref=e21]
+            - generic [ref=e24]:
+              - generic [ref=e25]:
+                - text: "5"
+                - generic [ref=e26]: /8
+              - generic [ref=e27]: Glasses
+          - paragraph [ref=e28]: Tap to add water
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e32]: 🧘
+            - generic [ref=e33]:
+              - generic [ref=e34]: Cardio
+              - generic [ref=e35]: 15 min
+          - generic [ref=e36]:
+            - generic [ref=e38]: 💪
+            - generic [ref=e39]:
+              - generic [ref=e40]: Core Flow
+              - generic [ref=e41]: 20 min
+          - generic [ref=e42]:
+            - generic [ref=e44]: 🏃‍♀️
+            - generic [ref=e45]:
+              - generic [ref=e46]: HIIT
+              - generic [ref=e47]: 10 min
+      - generic [ref=e49]: Workout Streak
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: 🔥
+          - heading "1 day streak" [level=3] [ref=e54]
+        - paragraph [ref=e55]: Day 1! The journey of a thousand miles begins with a single step.
+        - generic [ref=e56]:
+          - generic [ref=e58]: W
+          - generic [ref=e61]: T
+          - generic [ref=e64]: F
+          - generic [ref=e67]: S
+          - generic [ref=e70]: S
+          - generic [ref=e73]: M
+          - generic [ref=e76]: T
+        - generic [ref=e79]:
+          - generic [ref=e80]: 0d
+          - generic [ref=e81]: "Next: 3d"
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]: "1"
+            - text: Best Streak
+          - generic [ref=e87]:
+            - generic [ref=e88]: "1"
+            - text: Total Workouts
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: 3d
+            - generic [ref=e92]: 🌱 Getting Started
+          - generic [ref=e93]:
+            - generic [ref=e94]: 7d
+            - generic [ref=e95]: 🔥 Week Warrior
+          - generic [ref=e96]:
+            - generic [ref=e97]: 14d
+            - generic [ref=e98]: 💪 Two Week Titan
+          - generic [ref=e99]:
+            - generic [ref=e100]: 30d
+            - generic [ref=e101]: 👑 Monthly Master
+        - button "↺ Reset" [ref=e102] [cursor=pointer]
+      - generic [ref=e105]: Daily Info
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - img [ref=e109]
+          - generic [ref=e112]:
+            - generic [ref=e113]: Workout
+            - generic [ref=e114]: Daily session
+          - generic [ref=e115]: 12 min
+          - generic [ref=e116]:
+            - button [ref=e117] [cursor=pointer]:
+              - img [ref=e118]
+            - button [ref=e119] [cursor=pointer]:
+              - img [ref=e120]
+        - generic [ref=e121]:
+          - img [ref=e123]
+          - generic [ref=e125]:
+            - generic [ref=e126]: Water
+            - generic [ref=e127]: Stay hydrated
+          - generic [ref=e128]: 5 L
+          - generic [ref=e129]:
+            - button [ref=e130] [cursor=pointer]:
+              - img [ref=e131]
+            - button [ref=e132] [cursor=pointer]:
+              - img [ref=e133]
+        - generic [ref=e134]:
+          - img [ref=e136]
+          - generic [ref=e139]:
+            - generic [ref=e140]: Food
+            - generic [ref=e141]: Nutrition intake
+          - generic [ref=e142]: 1800 kcal
+          - generic [ref=e143]:
+            - button [ref=e144] [cursor=pointer]:
+              - img [ref=e145]
+            - button [ref=e146] [cursor=pointer]:
+              - img [ref=e147]
+        - generic [ref=e148]:
+          - img [ref=e150]
+          - generic [ref=e152]:
+            - generic [ref=e153]: Sleep
+            - generic [ref=e154]: Last night
+          - generic [ref=e155]: 9 hr
+          - generic [ref=e156]:
+            - button [ref=e157] [cursor=pointer]:
+              - img [ref=e158]
+            - button [ref=e159] [cursor=pointer]:
+              - img [ref=e160]
+  - navigation [ref=e161]:
+    - button "Tracker" [ref=e162] [cursor=pointer]:
+      - img [ref=e163]
+      - generic [ref=e165]: Tracker
+    - button "Workouts" [ref=e166] [cursor=pointer]:
+      - img [ref=e167]
+      - generic [ref=e173]: Workouts
+    - button "Goals" [ref=e174] [cursor=pointer]:
+      - img [ref=e175]
+      - generic [ref=e179]: Goals
+    - button "Recipes" [ref=e180] [cursor=pointer]:
+      - img [ref=e181]
+      - generic [ref=e184]: Recipes
+    - button "Coach" [ref=e185] [cursor=pointer]:
+      - img [ref=e186]
+      - generic [ref=e188]: Coach

@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "memories": [
+    {
+      "id": "mem-001-overview",
+      "content": "MIDULA PROJECT - OVERVIEW & TECH STACK\n\nProject: Midula - AI-powered health & wellness tracker (mobile-first web app)\nLocation: /Users/radhasriram/Desktop/PROJECTS/midula\nTech Stack: React 19.2.4 + Vite 8.0.1 + Express 5.2.1 + Supabase + OpenRouter API\nStyling: Custom CSS with Gruvbox Dark palette (no Tailwind)\nTarget: Mobile web (max-width: 480px centered container, iOS safe-area support)\nFont: Inter (400-800) via Google Fonts\n\nCore Dependencies:\n- @supabase/supabase-js ^2.101.1 (backend DB)\n- canvas-confetti ^1.9.4 (celebrations)\n- express ^5.2.1 (production server)\n- lucide-react ^1.7.0 (icons)\n- react/react-dom ^19.2.4\n\nBuild Scripts: dev (vite), build (vite build), preview (vite preview), start (node server.js)\n\nServer: Express static file server serving dist/ with SPA fallback routing on port 3000\n\nEnvironment Variables (3):\n- VITE_SUPABASE_URL (Supabase project endpoint)\n- VITE_SUPABASE_ANON_KEY (Supabase public anon key)\n- VITE_OPENROUTER_API_KEY (OpenRouter API key - CRITICAL: exposed in client bundle!)",
+      "category": "architecture",
+      "scope": "project",
+      "retention": "permanent",
+      "priority": 5,
+      "source": "user_explicit",
+      "createdAt": 1744041600000,
+      "lastAccessedAt": 1744041600000,
+      "updatedAt": 1744041600000,
+      "accessCount": 0,
+      "expiresAt": null,
+      "tags": [
+        "project:midula",
+        "tech-stack",
+        "react",
+        "supabase",
+        "overview"
+      ],
+      "relatedMemoryIds": [],
+      "confidence": 1
+    },
+    {
+      "id": "mem-002-database",
+      "content": "MIDULA PROJECT - DATABASE SCHEMA & DATA MODEL\n\nSupabase Database (5 tables, all with FULLY PERMISSIVE RLS policies):\n\n1. users: id (uuid PK), name (text), created_at (timestamp)\n   - Sample data: \"Default User\" inserted\n   - NO connection to Supabase Auth\n\n2. daily_trackers: id, user_id (FK->users), date, water_ml, carbs_g, protein_g, fats_g, vitamins_logged\n   - Tracks daily nutrition metrics\n   - NOT connected to Dashboard UI (Dashboard uses local state only)\n\n3. workouts: id, user_id (FK->users), date, routine_level (text), completed (boolean)\n   - Stores completed workout sessions\n   - NOT connected to Workouts UI (no write on completion)\n\n4. goals: id, user_id (FK->users), title, target_value, current_value, deadline\n   - User goal tracking\n   - NOT connected to Goals UI (Goals page is hardcoded data)\n\n5. recipes: id, title, ingredients (text[]), instructions, prep_time, calories, image_url\n   - Recipe storage\n   - NOT connected to Recipes UI (20+ recipes in src/data/recipes.js but UI shows 6 hardcoded stubs)\n\nRLS Policies: ALL tables have \"Allow all actions\" with using(true) with check(true)\nSECURITY ISSUE: Anyone with anon key can read/write/delete ALL data for ALL users.\n\nData Files in src/data/:\n- exercises.js: 25 exercise definitions across 5 routines\n- recipes.js: 20+ Indian vegetarian recipes with full macros, ingredients, steps (UNUSED by UI)",
+      "category": "architecture",
+      "scope": "project",
+      "retention": "permanent",
+      "priority": 5,
+      "source": "user_explicit",
+      "createdAt": 1744041600000,
+      "lastAccessedAt": 1744041600000,
+      "updatedAt": 1744041600000,
+      "accessCount": 0,
+      "expiresAt": null,
+      "tags": [
+        "project:midula",
+        "database",
+        "supabase",
+        "schema",
+        "security-issue"
+      ],
+      "relatedMemoryIds": [],
+      "confidence": 1
+    },
+    {
+      "id": "mem-003-features",
+      "content": "MIDULA PROJECT - COMPLETE FEATURE INVENTORY\n\nPAGES (5):\n1. Dashboard - Water ring tracker (SVG), quick stats, daily info with +/- buttons. All local state, NO persistence.\n2. Workouts - 5 hardcoded routines, leads to WorkoutDetail view (inline, not route-based).\n3. WorkoutDetail - Full exercise runner: timer, play/pause/skip/stop, flipbook exercise animation, rest periods (30s), coaching tips, progress dots, exercise list toggle, completion screen with confetti.\n4. Goals - 4 hardcoded goals with progress bars. \"Add New Goal\" button non-functional.\n5. Recipes - 6 hardcoded recipe cards (out of 20+ available). Cards non-clickable. No detail view.\n6. Chat - AI Health Coach using OpenRouter (qwen-2.5-72b-instruct). Injects Supabase data as context.\n\nCOMPONENTS (2):\n1. Navigation - Bottom tab bar (5 tabs): Tracker, Workouts, Goals, Recipes, Coach.\n2. ExerciseAnimation - Flipbook animation: alternates frame1/frame2 every 800ms with crossfade.\n\nCOMPLETED: Tab navigation, water tracker, exercise runner with timer/animations, AI chat, confetti celebrations, mobile layout, Gruvbox dark theme\n\nINCOMPLETE: NO auth, NO data persistence, goals read-only, recipes disconnected from dataset, pill tabs non-functional, NO browser routing, NO settings page",
+      "category": "feature",
+      "scope": "project",
+      "retention": "permanent",
+      "priority": 4,
+      "source": "user_explicit",
+      "createdAt": 1744041600000,
+      "lastAccessedAt": 1744041600000,
+      "updatedAt": 1744041600000,
+      "accessCount": 0,
+      "expiresAt": null,
+      "tags": [
+        "project:midula",
+        "features",
+        "pages",
+        "components",
+        "inventory"
+      ],
+      "relatedMemoryIds": [],
+      "confidence": 1
+    },
+    {
+      "id": "mem-004-improvements",
+      "content": "MIDULA PROJECT - CRITICAL IMPROVEMENTS NEEDED\n\nCRITICAL (Security & Functionality):\n1. OPENROUTER API KEY EXPOSED IN CLIENT BUNDLE - Must move to server-side proxy\n2. SUPABASE RLS POLICIES FULLY PERMISSIVE - Must tie to auth.uid()\n3. NO USER AUTHENTICATION - Must implement Supabase Auth\n4. NO DATA PERSISTENCE - Dashboard/Workouts/Goals reset on refresh\n5. UNUSED RECIPE DATASET - 20+ recipes exist but UI shows 6 stubs\n\nHIGH PRIORITY:\n6. NON-FUNCTIONAL PILL TABS on all pages\n7. NO BROWSER ROUTING - state-based tabs, no URL changes\n8. NO CODE SPLITTING - single JS bundle\n9. NO CI/CD PIPELINE\n10. NO DEPLOYMENT CONFIG files\n11. EXPRESS SERVER MISSING MIDDLEWARE (compression, helmet, rate limiting)\n12. NO .env.example TEMPLATE\n\nMEDIUM: No PWA, no offline support, no error boundaries, no loading states, no charts, no notifications\nLOW: .gitignore incomplete, no engines field, Express 5.x beta, no image optimization",
+      "category": "improvement",
+      "scope": "project",
+      "retention": "permanent",
+      "priority": 5,
+      "source": "user_explicit",
+      "createdAt": 1744041600000,
+      "lastAccessedAt": 1744041600000,
+      "updatedAt": 1744041600000,
+      "accessCount": 0,
+      "expiresAt": null,
+      "tags": [
+        "project:midula",
+        "improvements",
+        "security",
+        "priority",
+        "technical-debt"
+      ],
+      "relatedMemoryIds": [],
+      "confidence": 1
+    },
+    {
+      "id": "mem-005-design",
+      "content": "MIDULA PROJECT - DESIGN SYSTEM & UX ANALYSIS\n\nCOLOR SYSTEM (Gruvbox Dark):\n- Backgrounds: --bg0-hard=#1d2021, --bg0=#282828, --bg1=#3c3836, --bg2=#504945\n- Text: --fg=#ebdbb2, --fg4=#a89984\n- Accents: --aqua=#8ec07c (primary), --orange=#fe8019, --yellow=#fabd2f, --red=#fb4934, --green=#b8bb26, --purple=#d3869b\n\nTYPOGRAPHY: Inter (400-800), h1:1.6rem, section:1.1rem, body:0.875rem\nLAYOUT: Mobile-first max-width 480px, bottom nav 72px, iOS safe-area support\n\nANIMATIONS: fadeUp, pulseGlow, shimmer, breathe, ringFill, glowPulse, restPulse, dotPulse, completionBounce, canvas-confetti\n\nUX STRENGTHS: Polished theme, rich micro-animations, standout exercise runner, mobile-optimized, AI Coach differentiator\nUX CONCERNS: Data/UI gap (20+ recipes vs 6 stubs), no persistence, no onboarding, non-functional tabs, no empty states, no browser back",
+      "category": "feature",
+      "scope": "project",
+      "retention": "permanent",
+      "priority": 3,
+      "source": "user_explicit",
+      "createdAt": 1744041600000,
+      "lastAccessedAt": 1744041600000,
+      "updatedAt": 1744041600000,
+      "accessCount": 0,
+      "expiresAt": null,
+      "tags": [
+        "project:midula",
+        "design-system",
+        "ux",
+        "gruvbox",
+        "animations"
+      ],
+      "relatedMemoryIds": [],
+      "confidence": 1
+    },
+    {
+      "id": "mem-006-deployment",
+      "content": "MIDULA PROJECT - DEPLOYMENT & ARCHITECTURE ANALYSIS\n\nBUILD CONFIG (Vite 8.0.1): Minimal config, only @vitejs/plugin-react. Missing: code splitting, explicit minify, asset limits\nOutput: dist/assets/index-{hash}.js (single bundle) + index-{hash}.css\n\nDEPLOYMENT: Dual mode - static hosting (dist/) OR Express server. NO deployment config files (no vercel.json, netlify.toml, Dockerfile). NO CI/CD. Manual deployment.\n\nENV VARS: 3 VITE_ variables. CRITICAL: OpenRouter key exposed in client bundle.\n\nEXPRESS SERVER: Static file serving + SPA fallback. MISSING: compression, helmet, rate limiting, caching headers, health check.\n\nSCALABILITY: Single-server, client-side Supabase calls. Permissive RLS = unfiltered access. SPA can serve from CDN.\n\nRECOMMENDATIONS: Add deployment config, compression+helmet middleware, health endpoint, code splitting via manualChunks, .env.example, expanded .gitignore, GitHub Actions",
+      "category": "architecture",
+      "scope": "project",
+      "retention": "permanent",
+      "priority": 4,
+      "source": "user_explicit",
+      "createdAt": 1744041600000,
+      "lastAccessedAt": 1744041600000,
+      "updatedAt": 1744041600000,
+      "accessCount": 0,
+      "expiresAt": null,
+      "tags": [
+        "project:midula",
+        "deployment",
+        "architecture",
+        "vite",
+        "express",
+        "scalability"
+      ],
+      "relatedMemoryIds": [],
+      "confidence": 1
+    }
+  ],
+  "lastUpdated": 1775803350987
+}

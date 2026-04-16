@@ -1,0 +1,146 @@
+/* ===== Exercise Video/Illustration Component ===== */
+.exercise-video-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--bg0-hard);
+}
+
+.exercise-svg {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    filter: drop-shadow(0 4px 12px rgba(142, 192, 124, 0.15));
+}
+
+/* SVG Animation Classes */
+.animate-knee {
+    animation: kneeDrive 1s ease-in-out infinite;
+}
+
+@keyframes kneeDrive {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-crunch {
+    animation: crunch 1.2s ease-in-out infinite;
+}
+
+@keyframes crunch {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(10px, -15px); }
+}
+
+.animate-elbow {
+    animation: elbowTuck 1.2s ease-in-out infinite;
+}
+
+@keyframes elbowTuck {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-10px, 10px); }
+}
+
+.animate-climber {
+    animation: climberDrive 0.8s ease-in-out infinite;
+}
+
+@keyframes climberDrive {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-15px, -20px); }
+}
+
+.animate-deadbug-arm {
+    animation: deadbugArm 2s ease-in-out infinite;
+}
+
+@keyframes deadbugArm {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-15deg); }
+}
+
+.animate-deadbug-leg {
+    animation: deadbugLeg 2s ease-in-out infinite;
+}
+
+@keyframes deadbugLeg {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+}
+
+.animate-jack-arm {
+    animation: jackArm 1s ease-in-out infinite;
+}
+
+@keyframes jackArm {
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(-20deg) translateY(-30px); }
+}
+
+.animate-jack-leg {
+    animation: jackLeg 1s ease-in-out infinite;
+}
+
+@keyframes jackLeg {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(15px); }
+}
+
+.animate-walk-leg {
+    animation: walkLeg 1.5s ease-in-out infinite;
+}
+
+@keyframes walkLeg {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+}
+
+.animate-walk-arm {
+    animation: walkArm 1.5s ease-in-out infinite;
+}
+
+@keyframes walkArm {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+}
+
+/* Rest Placeholder */
+.exercise-rest-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rest-breath-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--yellow);
+    animation: restBreath 2s ease-in-out infinite;
+}
+
+@keyframes restBreath {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.1;
+    }
+}
+
+.rest-text {
+    font-size: 0.85rem;
+    color: var(--fg4);
+    font-weight: 500;
+}

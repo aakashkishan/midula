@@ -1,0 +1,91 @@
+- main [ref=e3]:
+  - generic [ref=e1106]:
+    - generic [ref=e1107]:
+      - button "Go back" [ref=e1109] [cursor=pointer]:
+        - img [ref=e1110]
+      - button "Add to favorites" [ref=e1112] [cursor=pointer]: 🤍
+      - generic [ref=e1113]:
+        - generic [ref=e1114]: 🍕
+        - generic [ref=e1115]:
+          - generic [ref=e1116]: Medium
+          - generic [ref=e1117]: Lunch
+        - heading "Margherita Pizza" [level=1] [ref=e1118]
+        - paragraph [ref=e1119]: Classic Neapolitan pizza with San Marzano tomatoes, fresh mozzarella, and basil. Simple perfection.
+    - generic [ref=e1121]:
+      - generic [ref=e1122]:
+        - generic [ref=e1123]: ⏱
+        - generic [ref=e1124]: 45 min
+        - generic [ref=e1125]: Cook Time
+      - generic [ref=e1126]:
+        - generic [ref=e1127]: 🔥
+        - generic [ref=e1128]: 280 kcal
+        - generic [ref=e1129]: Calories
+      - generic [ref=e1130]:
+        - generic [ref=e1131]: 🍽️
+        - generic [ref=e1132]: "2"
+        - generic [ref=e1133]: Servings
+    - generic [ref=e1134]:
+      - generic [ref=e1135]:
+        - generic [ref=e1137]: 💪
+        - generic [ref=e1138]:
+          - generic [ref=e1139]: 12g
+          - generic [ref=e1140]: Protein
+      - generic [ref=e1141]:
+        - generic [ref=e1143]: ⚡
+        - generic [ref=e1144]:
+          - generic [ref=e1145]: 38g
+          - generic [ref=e1146]: Carbs
+      - generic [ref=e1147]:
+        - generic [ref=e1149]: 🫒
+        - generic [ref=e1150]:
+          - generic [ref=e1151]: 8g
+          - generic [ref=e1152]: Fat
+    - generic [ref=e1153]:
+      - generic [ref=e1154]: "Adjust servings:"
+      - generic [ref=e1155]:
+        - button "−" [ref=e1156] [cursor=pointer]
+        - generic [ref=e1157]: "2"
+        - button "+" [ref=e1158] [cursor=pointer]
+    - generic [ref=e1159]:
+      - generic [ref=e1161]: 00:00
+      - button "▶ Start Timer" [ref=e1162] [cursor=pointer]
+    - generic [ref=e1163]:
+      - button "📋 Steps 1/7" [ref=e1223] [cursor=pointer]:
+        - text: 📋 Steps
+        - generic [ref=e1224]: 1/7
+      - button "🥕 Ingredients 10" [active] [ref=e1165] [cursor=pointer]:
+        - text: 🥕 Ingredients
+        - generic [ref=e1166]: "10"
+    - generic [ref=e1228]:
+      - generic [ref=e1229]:
+        - heading "What you'll need" [level=3] [ref=e1230]
+        - generic [ref=e1231]: 10 items
+      - generic [ref=e1232]:
+        - button "1.5 cups all-purpose flour" [ref=e1233] [cursor=pointer]:
+          - generic [ref=e1235]: 1.5 cups all-purpose flour
+        - button "½ cup warm water" [ref=e1236] [cursor=pointer]:
+          - generic [ref=e1238]: ½ cup warm water
+        - button "1 tsp instant yeast" [ref=e1239] [cursor=pointer]:
+          - generic [ref=e1241]: 1 tsp instant yeast
+        - button "1 tsp sugar" [ref=e1242] [cursor=pointer]:
+          - generic [ref=e1244]: 1 tsp sugar
+        - button "½ tsp salt" [ref=e1245] [cursor=pointer]:
+          - generic [ref=e1247]: ½ tsp salt
+        - button "½ cup tomato purée" [ref=e1248] [cursor=pointer]:
+          - generic [ref=e1250]: ½ cup tomato purée
+        - button "150g fresh mozzarella, sliced" [ref=e1251] [cursor=pointer]:
+          - generic [ref=e1253]: 150g fresh mozzarella, sliced
+        - button "Fresh basil leaves" [ref=e1254] [cursor=pointer]:
+          - generic [ref=e1256]: Fresh basil leaves
+        - button "1 tbsp olive oil" [ref=e1257] [cursor=pointer]:
+          - generic [ref=e1259]: 1 tbsp olive oil
+        - button "Salt and pepper to taste" [ref=e1260] [cursor=pointer]:
+          - generic [ref=e1262]: Salt and pepper to taste
+    - generic [ref=e1214]:
+      - generic [ref=e1215]: 💡
+      - heading "Cooking Tips" [level=3] [ref=e1216]
+      - list [ref=e1217]:
+        - listitem [ref=e1218]: → Read all steps before starting
+        - listitem [ref=e1219]: → Prep all ingredients before cooking (mise en place)
+        - listitem [ref=e1220]: → Use the timer to track cooking durations
+        - listitem [ref=e1221]: → Adjust spice levels to your preference

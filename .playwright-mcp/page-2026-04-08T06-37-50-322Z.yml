@@ -1,0 +1,119 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e127]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - heading "Healthy Recipes 🌿" [level=1] [ref=e140]
+          - paragraph [ref=e141]: 55 vegetarian recipes from around the world
+        - button "Toggle search" [ref=e142] [cursor=pointer]:
+          - img [ref=e143]
+      - generic [ref=e147]:
+        - button "All" [ref=e148] [cursor=pointer]
+        - button "Breakfast" [ref=e149] [cursor=pointer]
+        - button "Lunch" [ref=e150] [cursor=pointer]
+        - button "Dinner" [ref=e151] [cursor=pointer]
+        - button "Snack" [ref=e152] [cursor=pointer]
+        - button "Drink" [ref=e153] [cursor=pointer]
+      - generic [ref=e155]:
+        - button "🌍 All" [ref=e156] [cursor=pointer]
+        - button "🇮🇳 Indian" [ref=e157] [cursor=pointer]
+        - button "🇮🇹 Italian" [active] [ref=e158] [cursor=pointer]
+        - button "🇲🇽 Mexican" [ref=e159] [cursor=pointer]
+        - button "🇹🇭 Thai" [ref=e160] [cursor=pointer]
+      - generic [ref=e162]:
+        - button "All" [ref=e163] [cursor=pointer]
+        - button "Easy" [ref=e164] [cursor=pointer]
+        - button "Medium" [ref=e165] [cursor=pointer]
+        - button "Hard" [ref=e166] [cursor=pointer]
+      - generic [ref=e167]:
+        - paragraph [ref=e168]: 6 recipes found
+        - button "Clear all" [ref=e1105] [cursor=pointer]
+      - generic [ref=e169]:
+        - button "🍕 Margherita Pizza ⏱ 45 min 🔥 280 kcal Medium 2 servings" [ref=e680] [cursor=pointer]:
+          - generic [ref=e682]:
+            - generic [ref=e683]: 🍕
+            - img [ref=e684]
+          - heading "Margherita Pizza" [level=3] [ref=e687]
+          - generic [ref=e688]:
+            - generic [ref=e689]: ⏱ 45 min
+            - generic [ref=e690]: 🔥 280 kcal
+          - generic [ref=e691]:
+            - generic [ref=e692]: Medium
+            - generic [ref=e693]: 2 servings
+          - img [ref=e695]
+        - button "🍝 Penne Arrabbiata ⏱ 25 min 🔥 320 kcal Easy 2 servings" [ref=e697] [cursor=pointer]:
+          - generic [ref=e699]:
+            - generic [ref=e700]: 🍝
+            - img [ref=e701]
+          - heading "Penne Arrabbiata" [level=3] [ref=e704]
+          - generic [ref=e705]:
+            - generic [ref=e706]: ⏱ 25 min
+            - generic [ref=e707]: 🔥 320 kcal
+          - generic [ref=e708]:
+            - generic [ref=e709]: Easy
+            - generic [ref=e710]: 2 servings
+          - img [ref=e712]
+        - button "🍄 Risotto ai Funghi ⏱ 40 min 🔥 350 kcal Hard 3 servings" [ref=e714] [cursor=pointer]:
+          - generic [ref=e716]:
+            - generic [ref=e717]: 🍄
+            - img [ref=e718]
+          - heading "Risotto ai Funghi" [level=3] [ref=e721]
+          - generic [ref=e722]:
+            - generic [ref=e723]: ⏱ 40 min
+            - generic [ref=e724]: 🔥 350 kcal
+          - generic [ref=e725]:
+            - generic [ref=e726]: Hard
+            - generic [ref=e727]: 3 servings
+          - img [ref=e729]
+        - button "🍅 Bruschetta ⏱ 15 min 🔥 150 kcal Easy 4 servings" [ref=e731] [cursor=pointer]:
+          - generic [ref=e733]:
+            - generic [ref=e734]: 🍅
+            - img [ref=e735]
+          - heading "Bruschetta" [level=3] [ref=e738]
+          - generic [ref=e739]:
+            - generic [ref=e740]: ⏱ 15 min
+            - generic [ref=e741]: 🔥 150 kcal
+          - generic [ref=e742]:
+            - generic [ref=e743]: Easy
+            - generic [ref=e744]: 4 servings
+          - img [ref=e746]
+        - button "🥗 Caprese Salad ⏱ 10 min 🔥 180 kcal Easy 2 servings" [ref=e748] [cursor=pointer]:
+          - generic [ref=e750]:
+            - generic [ref=e751]: 🥗
+            - img [ref=e752]
+          - heading "Caprese Salad" [level=3] [ref=e755]
+          - generic [ref=e756]:
+            - generic [ref=e757]: ⏱ 10 min
+            - generic [ref=e758]: 🔥 180 kcal
+          - generic [ref=e759]:
+            - generic [ref=e760]: Easy
+            - generic [ref=e761]: 2 servings
+          - img [ref=e763]
+        - button "🥟 Gnocchi al Pesto ⏱ 35 min 🔥 380 kcal Medium 3 servings" [ref=e765] [cursor=pointer]:
+          - generic [ref=e767]:
+            - generic [ref=e768]: 🥟
+            - img [ref=e769]
+          - heading "Gnocchi al Pesto" [level=3] [ref=e772]
+          - generic [ref=e773]:
+            - generic [ref=e774]: ⏱ 35 min
+            - generic [ref=e775]: 🔥 380 kcal
+          - generic [ref=e776]:
+            - generic [ref=e777]: Medium
+            - generic [ref=e778]: 3 servings
+          - img [ref=e780]
+  - navigation [ref=e99]:
+    - button "Tracker" [ref=e100] [cursor=pointer]:
+      - img [ref=e101]
+      - generic [ref=e103]: Tracker
+    - button "Workouts" [ref=e104] [cursor=pointer]:
+      - img [ref=e105]
+      - generic [ref=e111]: Workouts
+    - button "Goals" [ref=e112] [cursor=pointer]:
+      - img [ref=e113]
+      - generic [ref=e117]: Goals
+    - button "Recipes" [ref=e118] [cursor=pointer]:
+      - img [ref=e119]
+      - generic [ref=e122]: Recipes
+    - button "Coach" [ref=e123] [cursor=pointer]:
+      - img [ref=e124]
+      - generic [ref=e126]: Coach

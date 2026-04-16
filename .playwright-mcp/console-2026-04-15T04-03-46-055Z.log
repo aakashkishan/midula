@@ -1,0 +1,7 @@
+[     164ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5175/node_modules/.vite/deps/react-dom_client.js?v=7127e4a2:14336
+[   58597ms] [ERROR] Access to fetch at 'https://exercisedb.dev/api/v1/exercises?name=high%20knees' from origin 'http://localhost:5175' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5175/:0
+[   58597ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://exercisedb.dev/api/v1/exercises?name=high%20knees:0
+[   58597ms] [WARNING] ExerciseDB API failed for "High Knees", trying fallback: Failed to fetch @ http://localhost:5175/src/components/ExerciseVideo.jsx:88
+[   58637ms] [ERROR] Access to fetch at 'https://exercisedb.dev/api/v1/exercises?name=high%20knees' from origin 'http://localhost:5175' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:5175/:0
+[   58637ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://exercisedb.dev/api/v1/exercises?name=high%20knees:0
+[   58637ms] [WARNING] ExerciseDB API failed for "High Knees", trying fallback: Failed to fetch @ http://localhost:5175/src/components/ExerciseVideo.jsx:88

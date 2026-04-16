@@ -1,0 +1,90 @@
+.streak-reward-banner {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 480px;
+    width: 100%;
+    z-index: 200;
+    animation: bannerSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes bannerSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.reward-banner-content {
+    background: linear-gradient(135deg, var(--bg0) 0%, var(--bg1) 100%);
+    border: 1px solid var(--aqua);
+    border-radius: 0 0 20px 20px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.reward-emoji {
+    font-size: 2.5rem;
+    animation: rewardBounce 0.8s ease-in-out infinite;
+}
+
+@keyframes rewardBounce {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.15) rotate(10deg); }
+}
+
+.reward-text h3 {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--aqua);
+    margin: 0 0 2px 0;
+}
+
+.reward-text p {
+    font-size: 0.78rem;
+    color: var(--fg);
+    margin: 0 0 4px 0;
+}
+
+.reward-teaser {
+    font-size: 0.68rem;
+    color: var(--yellow);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.reward-dismiss {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--bg2);
+    color: var(--fg4);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.reward-dismiss:hover {
+    background: var(--bg3);
+    color: var(--fg);
+}
+
+.reward-confetti-burst {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 199;
+}

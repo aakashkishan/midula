@@ -1,0 +1,5 @@
+[     162ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2365f558:14090
+[   46061ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[   46407ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[   46546ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1728
+[   46984ms] [LOG] THREE.WebGLRenderer: Context Lost. @ http://localhost:5173/node_modules/.vite/deps/three.module-BtZcz66E.js?v=2365f558:1694

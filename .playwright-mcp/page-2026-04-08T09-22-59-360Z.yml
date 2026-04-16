@@ -1,0 +1,77 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e189]:
+      - generic [ref=e190]:
+        - heading "Home Workouts" [level=1] [ref=e191]
+        - paragraph [ref=e192]: Daily routines to keep you moving 💃
+      - generic [ref=e193]:
+        - generic [ref=e194]: All
+        - generic [ref=e195]: Beginner
+        - generic [ref=e196]: Intermediate
+      - generic [ref=e197]:
+        - generic [ref=e198] [cursor=pointer]:
+          - generic [ref=e200]: 🧘
+          - generic [ref=e201]:
+            - heading "Beginner Core Flow" [level=3] [ref=e202]
+            - generic [ref=e203]:
+              - generic [ref=e204]: ⏱ 15 min
+              - generic [ref=e205]: 🔥 120 kcal
+              - generic [ref=e206]: Beginner
+          - button [ref=e207]:
+            - img [ref=e208]
+        - generic [ref=e210] [cursor=pointer]:
+          - generic [ref=e212]: 🏃‍♀️
+          - generic [ref=e213]:
+            - heading "HIIT Cardio Blast" [level=3] [ref=e214]
+            - generic [ref=e215]:
+              - generic [ref=e216]: ⏱ 20 min
+              - generic [ref=e217]: 🔥 250 kcal
+              - generic [ref=e218]: Intermediate
+          - button [ref=e219]:
+            - img [ref=e220]
+        - generic [ref=e222] [cursor=pointer]:
+          - generic [ref=e224]: 🧎‍♀️
+          - generic [ref=e225]:
+            - heading "Yoga & Stretch" [level=3] [ref=e226]
+            - generic [ref=e227]:
+              - generic [ref=e228]: ⏱ 30 min
+              - generic [ref=e229]: 🔥 90 kcal
+              - generic [ref=e230]: All Levels
+          - button [ref=e231]:
+            - img [ref=e232]
+        - generic [ref=e234] [cursor=pointer]:
+          - generic [ref=e236]: 💪
+          - generic [ref=e237]:
+            - heading "Pilates Sculpt" [level=3] [ref=e238]
+            - generic [ref=e239]:
+              - generic [ref=e240]: ⏱ 25 min
+              - generic [ref=e241]: 🔥 180 kcal
+              - generic [ref=e242]: Intermediate
+          - button [ref=e243]:
+            - img [ref=e244]
+        - generic [ref=e246] [cursor=pointer]:
+          - generic [ref=e248]: 🚶‍♀️
+          - generic [ref=e249]:
+            - heading "Evening Walk" [level=3] [ref=e250]
+            - generic [ref=e251]:
+              - generic [ref=e252]: ⏱ 40 min
+              - generic [ref=e253]: 🔥 150 kcal
+              - generic [ref=e254]: Easy
+          - button [ref=e255]:
+            - img [ref=e256]
+  - navigation [ref=e161]:
+    - button "Tracker" [ref=e162] [cursor=pointer]:
+      - img [ref=e163]
+      - generic [ref=e165]: Tracker
+    - button "Workouts" [active] [ref=e166] [cursor=pointer]:
+      - img [ref=e167]
+      - generic [ref=e173]: Workouts
+    - button "Goals" [ref=e174] [cursor=pointer]:
+      - img [ref=e175]
+      - generic [ref=e179]: Goals
+    - button "Recipes" [ref=e180] [cursor=pointer]:
+      - img [ref=e181]
+      - generic [ref=e184]: Recipes
+    - button "Coach" [ref=e185] [cursor=pointer]:
+      - img [ref=e186]
+      - generic [ref=e188]: Coach

@@ -1,0 +1,29 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - heading "🧠 Qwen-Mem Dashboard" [level=1] [ref=e5]
+      - generic [ref=e6]: Aggregated memories across all sessions, organized by project
+    - button "↻ Refresh" [ref=e8] [cursor=pointer]
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - heading "Total Memories" [level=3] [ref=e11]
+      - generic [ref=e12]: "0"
+    - generic [ref=e13]:
+      - heading "Global Memories" [level=3] [ref=e14]
+      - generic [ref=e15]: "0"
+    - generic [ref=e16]:
+      - heading "Project Memories" [level=3] [ref=e17]
+      - generic [ref=e18]: "0"
+    - generic [ref=e19]:
+      - heading "Categories" [level=3] [ref=e20]
+      - generic [ref=e21]: "0"
+    - generic [ref=e22]:
+      - heading "Expired" [level=3] [ref=e23]
+      - generic [ref=e24]: "0"
+  - generic [ref=e25]:
+    - button "📁 By Project" [ref=e26] [cursor=pointer]
+    - button "📋 Flat List" [ref=e27] [cursor=pointer]
+  - generic [ref=e28]:
+    - textbox "Search across all projects..." [ref=e29]
+    - button "Search" [ref=e30] [cursor=pointer]
+  - generic [ref=e32]: No memories found

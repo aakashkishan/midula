@@ -1,0 +1,25 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e345]:
+      - generic [ref=e346]:
+        - img [ref=e347]
+        - generic [ref=e350]:
+          - generic [ref=e351]: 🍳
+          - generic [ref=e352]: 66%
+      - paragraph [ref=e353]: Brewing up delicious recipes...
+  - navigation [ref=e160]:
+    - button "Tracker" [ref=e161] [cursor=pointer]:
+      - img [ref=e162]
+      - generic [ref=e164]: Tracker
+    - button "Workouts" [ref=e165] [cursor=pointer]:
+      - img [ref=e166]
+      - generic [ref=e172]: Workouts
+    - button "Goals" [ref=e173] [cursor=pointer]:
+      - img [ref=e174]
+      - generic [ref=e178]: Goals
+    - button "Recipes" [active] [ref=e179] [cursor=pointer]:
+      - img [ref=e180]
+      - generic [ref=e183]: Recipes
+    - button "Coach" [ref=e184] [cursor=pointer]:
+      - img [ref=e185]
+      - generic [ref=e187]: Coach

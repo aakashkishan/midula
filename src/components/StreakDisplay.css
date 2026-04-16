@@ -1,0 +1,241 @@
+.streak-display {
+    background: var(--surface-color);
+    border: 1px solid var(--bg1);
+    border-radius: 20px;
+    padding: 1.25rem;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.streak-animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.streak-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.streak-flame {
+    display: inline-block;
+    animation: flameWiggle 1.5s ease-in-out infinite;
+}
+
+@keyframes flameWiggle {
+    0%, 100% { transform: rotate(-3deg) scale(1); }
+    25% { transform: rotate(3deg) scale(1.05); }
+    50% { transform: rotate(-2deg) scale(1.1); }
+    75% { transform: rotate(2deg) scale(1.05); }
+}
+
+.streak-title-wrap {
+    flex: 1;
+}
+
+.streak-count {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--fg);
+    margin: 0;
+}
+
+.streak-urgent {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--orange);
+    background: rgba(254, 128, 25, 0.12);
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 2px;
+    animation: urgentPulse 2s ease-in-out infinite;
+}
+
+@keyframes urgentPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.streak-message {
+    font-size: 0.8rem;
+    color: var(--fg3);
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
+}
+
+/* Weekly Calendar */
+.streak-weekly {
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.streak-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+}
+
+.streak-day-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: var(--fg4);
+    text-transform: uppercase;
+}
+
+.streak-day-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--bg2);
+    border: 2px solid var(--bg3);
+    transition: all 0.3s ease;
+}
+
+.streak-day-dot.completed {
+    background: var(--aqua);
+    border-color: var(--aqua);
+    box-shadow: 0 0 8px rgba(142, 192, 124, 0.4);
+}
+
+.streak-day-dot.today {
+    border-color: var(--yellow);
+    animation: todayPulse 2s ease-in-out infinite;
+}
+
+.streak-day-dot.today.completed {
+    border-color: var(--aqua);
+    background: var(--aqua);
+}
+
+@keyframes todayPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(250, 189, 47, 0.3); }
+    50% { box-shadow: 0 0 0 4px rgba(250, 189, 47, 0); }
+}
+
+/* Milestone Progress */
+.streak-milestone-progress {
+    margin-bottom: 1rem;
+}
+
+.streak-milestone-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.streak-milestone-current,
+.streak-milestone-target {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--fg4);
+}
+
+.streak-milestone-target {
+    color: var(--aqua);
+}
+
+.streak-milestone-bar {
+    height: 6px;
+    background: var(--bg2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.streak-milestone-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--aqua), var(--green));
+    border-radius: 3px;
+    transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Stats Row */
+.streak-stats-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bg1);
+}
+
+.streak-stat {
+    flex: 1;
+    text-align: center;
+}
+
+.streak-stat-val {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--fg);
+}
+
+.streak-stat-label {
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: var(--fg4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Milestone Badges */
+.streak-badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.streak-badge {
+    padding: 0.6rem 0.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.streak-badge.unlocked {
+    background: rgba(142, 192, 124, 0.1);
+    border: 1px solid rgba(142, 192, 124, 0.3);
+}
+
+.streak-badge.locked {
+    background: var(--bg1);
+    border: 1px solid var(--bg2);
+    opacity: 0.5;
+}
+
+.badge-days {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--fg);
+}
+
+.badge-label {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--fg4);
+    margin-top: 2px;
+}
+
+.streak-reset-btn {
+    margin-top: 0.75rem;
+    font-size: 0.65rem;
+    color: var(--fg4);
+    opacity: 0.4;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.streak-reset-btn:hover {
+    opacity: 1;
+    background: var(--bg1);
+}

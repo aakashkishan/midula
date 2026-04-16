@@ -1,0 +1,4 @@
+[     198ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:5173/node_modules/.vite/deps/@babylonjs_core.js?v=c1d35391:0
+[   43690ms] [ERROR] WebSocket connection to 'ws://localhost:5173/?token=Qs1bH0V44AOT' failed:  @ http://localhost:5173/@vite/client:840
+[   43691ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5173/@vite/client:968
+[   45720ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:14337

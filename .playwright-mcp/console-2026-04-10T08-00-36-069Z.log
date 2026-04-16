@@ -1,0 +1,9 @@
+[     381ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=2f7819b7:14337
+[   46419ms] [LOG] BJS - [01:01:22]: Babylon.js v9.2.0 - WebGL2 - Parallel shader compilation @ http://localhost:5173/node_modules/.vite/deps/logger-DkPtg8o-.js?v=c46dbebc:39
+[   46495ms] [LOG] BJS - [01:01:22]: Babylon.js v9.2.0 - WebGL2 - Parallel shader compilation @ http://localhost:5173/node_modules/.vite/deps/logger-DkPtg8o-.js?v=c46dbebc:39
+[   46538ms] TypeError: engine.getRunningTime is not a function
+    at http://localhost:5173/src/components/3d/Exercise3D.jsx?t=1775807996544:181:24
+    at Engine._renderFrame (http://localhost:5173/node_modules/.vite/deps/tools.functions-DRbg3PUP.js?v=c46dbebc:4233:4)
+    at Engine._processFrame (http://localhost:5173/node_modules/.vite/deps/tools.functions-DRbg3PUP.js?v=c46dbebc:4219:61)
+    at Engine._renderLoop (http://localhost:5173/node_modules/.vite/deps/@babylonjs_core.js?v=167c5ed7:42510:8)
+    at AbstractEngine._boundRenderFunction (http://localhost:5173/node_modules/.vite/deps/tools.functions-DRbg3PUP.js?v=c46dbebc:4753:51)

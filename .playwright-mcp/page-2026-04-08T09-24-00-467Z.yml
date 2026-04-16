@@ -1,0 +1,43 @@
+- generic [ref=e2]:
+  - main [ref=e3]:
+    - generic [ref=e258]:
+      - generic [ref=e259]:
+        - button [ref=e260] [cursor=pointer]:
+          - img [ref=e261]
+        - generic [ref=e263]:
+          - heading "Beginner Core Flow" [level=2] [ref=e264]
+          - paragraph [ref=e265]: Exercise 1 of 5
+      - generic [ref=e272]:
+        - generic [ref=e273]: ACTIVE
+        - heading "High Knees" [level=1] [ref=e274]
+        - paragraph [ref=e275]: 💡 Drive your knees up to hip height
+      - img [ref=e278]
+      - generic [ref=e289]:
+        - img [ref=e290]
+        - generic [ref=e294]: 0:30
+      - generic [ref=e295]:
+        - button [ref=e296] [cursor=pointer]:
+          - img [ref=e297]
+        - button [ref=e299] [cursor=pointer]:
+          - img [ref=e300]
+        - button [ref=e302] [cursor=pointer]:
+          - img [ref=e303]
+      - generic [ref=e305] [cursor=pointer]:
+        - generic [ref=e306]: All Exercises
+        - img [ref=e307]
+  - navigation [ref=e161]:
+    - button "Tracker" [ref=e162] [cursor=pointer]:
+      - img [ref=e163]
+      - generic [ref=e165]: Tracker
+    - button "Workouts" [ref=e166] [cursor=pointer]:
+      - img [ref=e167]
+      - generic [ref=e173]: Workouts
+    - button "Goals" [ref=e174] [cursor=pointer]:
+      - img [ref=e175]
+      - generic [ref=e179]: Goals
+    - button "Recipes" [ref=e180] [cursor=pointer]:
+      - img [ref=e181]
+      - generic [ref=e184]: Recipes
+    - button "Coach" [ref=e185] [cursor=pointer]:
+      - img [ref=e186]
+      - generic [ref=e188]: Coach
